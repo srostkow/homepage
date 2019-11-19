@@ -1,14 +1,99 @@
-body {
-    background: salmon;
-}
-.mainHeader {
-    color: tomato;
+html {
+    box-sizing: border-box;
 }
 
-.sectionHeader {
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #cccccc;
+    color: #333333;
+}
+
+.heading {
+    color: #00487c;
+}
+
+.sectionHeader, .diaryHeader {
     color: #1460aa;
+}
+
+.thirdHeader {
+    color: #0496ff;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    border: 10px solid red;
+    margin: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
 }
 
 p {
     color: darkblue;
+}
+
+.about__header {
+    color: #1460aa;
+}
+
+.about__paragraph {
+    padding: 16px;
+    font-size: 20px;
+}
+
+.about__paragraph--color {
+    color: #FF6700;
+}
+
+.about__picture {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    float: left;
+    margin: 0 16px 0 16px;
+}
+
+.about__link {
+    color: #1a936f;
+}
+
+.hobby__list {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation {
+
+}
+
+.navigation__item {
+    display: inline;
+}
+
+.navigation__link {
+    color: #1a936f;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+}
+
+.site-header {
+    box-sizing: border-box;
+    left: 0;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

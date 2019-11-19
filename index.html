@@ -6,46 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <header>
-        <a href="index.html">Strona główna</a>
-        <a href="podstrona.html">Podstrona</a>
+    <header class="site-header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html">Strona główna</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="podstrona.html">Podstrona</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <header>
-            <h1 class="mainHeader">
+    <main class="main">
+        <header class="header">
+            <h1 class="heading">
                 Slawomir - strona domowa -pozdro github
             </h1>
         </header>
-        <section>
-            <h2 class="sectionHeader">
+        <section class="about">
+            <div class="box">Co ten frontend</div>
+            <h2 class="about__header">
                 Kim jestem
             </h2>
-            <p>
-                <b>co dzień</b> djgdfjgd <strong>hello</strong> dhsferifgvdcvbdbd vhbbferbfbvbubv bvhbbebcveb hefbebvbeb.
+            <p class="about__paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto debitis ea aut est! Reiciendis non iste debitis perferendis iure eligendi, omnis et? Corrupti nostrum odio ad officiis amet! Ea, quaerat!
                 <br/>
-                <a href="#pamietniczek">Przejdź do pamięczka</a>
+                <a class="about__link" href="#pamietniczek">Przejdź do pamięczka</a>
             </p>
+            <p class="about__paragraph about__paragraph--color about__paragraph--js">
+                Testuję modyfikator
+            </p>
+            <section class="hobby">
+                <ul class="hobby__list">
+                    <li>nagrywanie szkolenia</li>
+                    <li>dronowanie</li>
+                    <li>spanie</li>
+                    <li>układanie planu dnia</li>
+                        <ol>
+                            <li>Otwórz przeglądarkę</li>
+                            <li>Wpisz cotenfrontend.pl</li>
+                            <li>[Enter]</li>
+                        </ol>
+                </ul>
+            </section>
+            <section class="plan">
+                <ol>
+                    <li>Otwórz przeglądarkę</li>
+                    <li>Wpisz cotenfrontend.pl</li>
+                    <li>[Enter]</li>
+                </ol>
+            </section>            
         </section>
-        <section id="pamietniczek">
-            <h2>
+        <section class="diary" id="pamietniczek">
+            <h2 class="diaryHeader">
                 Pamiętniczek
             </h2>
             <section>
-                <h3>
+                <h3 class="thirdHeader">
                     Jak stworzyć prawidłowego HTML-a
                 </h3>
                 <p>
                     fgj;djgdfjg <i>lalalaal</i> dhsferifgvdc <em>lalala</em> vhbbferbfbvbubv bvhbbebcveb hefbebvbeb<br/>
-                    <a href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+                    <a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
                 </p>
-                <h3>
+                <h3 class="thirdHeader">
                     Czy nagrywanie szkolenia to prosta sprawa
                 </h3>
             </section>
+        </section>
+        <section class="glossary">
+            <dl>
+                <dt>CSS</dt>
+                <dd>Style (to co widzisz, jak jest ładne albo brzydkie)</dd>
+                <dt>HTML</dt>
+                <dd>Treść i szkielet strony</dd>
+                <dt>JavaScript</dt>
+                <dt>ES6</dt>
+                <dd>Rzeczy, których teraz się uczę</dd>
+            </dl>
+        </section>
+        <section class="data">
+            <table class="table">
+                <caption>Oceny z I semestru</caption>
+                <thead>
+                    <tr>
+                        <th>Imię nazwisko</th>
+                        <th>Ocena</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sławomir Rostkowski</td>
+                        <td>5</td>
+                        <td>03.04.2019</td>
+                    </tr>
+                    <tr>
+                        <td>Jan Kowalski</td>
+                        <td>4</td>
+                        <td>05.04.2019</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer>
