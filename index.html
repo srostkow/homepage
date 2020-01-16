@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header class="site-header">
         <nav class="navigation">
-            <ul class="navigation__list">
+            <ul class="navigation__list navigation__list--js">
                 <li class="navigation__item">
                     <a class="navigation__link" href="index.html">Strona główna</a>
                 </li>
@@ -22,12 +22,14 @@
                 </li>
             </ul>
         </nav>
+        <button class="navigation__switcher navigation__switcher--js">=</button>
     </header>
     <main class="main">
         <header class="header">
-            <h1 class="heading">
+            <h1 class="header__title header__title--js">
                 Slawomir - strona domowa -pozdro github
             </h1>
+            <button class="header__button header__button--js">Zmień treść nagłówka</button>
         </header>
         <section class="about">
             <div class="box">Co ten frontend</div>
@@ -67,18 +69,25 @@
             <h2 class="diaryHeader">
                 Pamiętniczek
             </h2>
-            <section>
+            <div class="grid">
+            <section class="day">
                 <h3 class="thirdHeader">
                     Jak stworzyć prawidłowego HTML-a
                 </h3>
                 <p>
-                    fgj;djgdfjg <i>lalalaal</i> dhsferifgvdc <em>lalala</em> vhbbferbfbvbubv bvhbbebcveb hefbebvbeb<br/>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus non obcaecati voluptatem pariatur, doloribus, voluptatum voluptates repudiandae ducimus atque quod ad molestiae vero hic explicabo qui odio corrupti reprehenderit.
                     <a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
                 </p>
+            </section>
+            <section class="day">
                 <h3 class="thirdHeader">
                     Czy nagrywanie szkolenia to prosta sprawa
                 </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde, ullam nulla numquam tenetur, ea possimus suscipit aperiam impedit recusandae dolorum officiis, rerum repellat ducimus! Quam tempora delectus iste nisi?
+                </p>
             </section>
+            </div>
         </section>
         <section class="glossary">
             <dl>
@@ -119,6 +128,6 @@
     <footer>
         Strona domowa Slawomira
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
